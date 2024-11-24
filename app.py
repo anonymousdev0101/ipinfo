@@ -7,9 +7,10 @@ from bs4 import BeautifulSoup
 import dns.resolver
 
 # Function to fetch WHOIS info for domain
+# Function to fetch WHOIS info for domain
 def get_whois_info(domain):
     try:
-        w = whois.whois(domain)
+        w = whois.whois(domain)  # This will fetch the WHOIS info
         return w
     except Exception as e:
         return f"Error: {e}"
